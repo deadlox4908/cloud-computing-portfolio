@@ -69,5 +69,7 @@ CREATE TABLE IF NOT EXISTS orders (
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
   INDEX idx_user_id (user_id),
   INDEX idx_status  (status)
-);INSERT INTO menu_items (name, category, price, description, badge, rating)
+);
+
+INSERT INTO menu_items (name, category, price, description, badge, rating)
 VALUES ('Laksa', 'Noodles', 9.50, 'Spicy coconut noodle soup with prawns and tofu puffs', NULL, 4.5);
